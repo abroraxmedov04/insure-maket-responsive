@@ -1,7 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+/* karla-regular - latin */
+@font-face {
+  font-family: "Karla";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/karlaregular.woff2") format("woff2"),
+       url("../fonts/karlaregular.woff") format("woff"); 
+}
 
-/* font-family: "DM Serif Display", serif; */
+
+@font-face {
+  font-family: "Karla";
+  font-weight: 700;
+  font-display: swap; 
+  src: url("../fonts/karlabold.woff2") format("woff2"), 
+       url("../fonts/karlabold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-display: swap; 
+  src: url("../fonts/dmserifregular.woff2") format("woff2"),
+  url("../fonts/dmserifregular.woff") format("woff"); 
+}
+
 
 /* Reset */
 * {
@@ -23,12 +45,16 @@ a {
 
 /* Fonts */
 /* @font-face {
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
   font-display: swap;
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/karlaFont/karla-v31-latin-regular.woff2');
+  src: url("/fonts/karlaFont/karla-v31-latin-regular.woff2");
 } */
+
+body {
+  font-family: "Karla", "Arial", sans-serif;
+}
 
 /* Container */
 .container {
@@ -163,7 +189,7 @@ img {
 }
 
 .hero__content-title {
-  font-family: "DM Serif Display", serif;
+  font-family: "DM Serif Display", "Arial", sans-serif;
   max-width: 540px;
   font-size: 35px;
   font-weight: 400;
@@ -173,7 +199,6 @@ img {
 }
 
 .hero__content-paragraph {
-  font-family: "Karla", sans-serif;
   max-width: 327px;
   font-weight: 400;
   line-height: 26px;
@@ -239,7 +264,7 @@ img {
 }
 
 .article__title {
-  font-family: "DM Serif Display", serif;
+  font-family: "DM Serif Display", sans-serif;
   color: rgba(255, 255, 255, 1);
   font-size: 40px;
   font-weight: 400;
@@ -288,12 +313,13 @@ img {
   position: relative;
 }
 
-.moreinfo{
+.moreinfo {
   margin-top: 150px;
 }
+
 .moreinfo__title {
   text-align: center;
-  font-family: "DM Serif Display", serif;
+  font-family: "DM Serif Display", "Arial", serif;
   font-weight: 500;
   color: rgba(44, 40, 48, 1);
   font-size: 40px;
@@ -377,7 +403,7 @@ img {
   }
 
   .article__title {
-    font-family: "DM Serif Display", serif;
+    font-family: "DM Serif Display", "Arial", serif;
     color: rgba(255, 255, 255, 1);
     font-size: 56px;
     font-weight: 400;
@@ -422,7 +448,7 @@ img {
     max-width: 560px;
     right: 40px;
     width: 100%;
-    height: 650px;  
+    height: 650px;
     background-size: contain;
     background-repeat: no-repeat;
     transform: translateY(100px);
@@ -436,7 +462,7 @@ img {
     position: relative;
   }
 
-  .hero__line-top{
+  .hero__line-top {
     position: absolute;
     width: 150px;
     height: 1px;
